@@ -1,3 +1,4 @@
+importScripts('idb.js');
 var cacheID = "mws-001";
 
 self.addEventListener("install", event => {
@@ -12,9 +13,8 @@ self.addEventListener("install", event => {
                 `/js/restaurant_info.js`,
                 `/js/dbhelper.js`,
                 `/js/register.js`,
-                `/sw.js`,
-                `/data/restaurants.json`
-                ])
+                `/sw.js`
+            ])
                 .then(() => self.skipWaiting());
         })
     );
@@ -26,14 +26,11 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', function (event) {
     event.respondWith(
-        caches.open(cacheID).then(function (cache)
-        {
+        caches.open(cacheID).then(function (cache) {
             return cache.match(event.request)
-                .then(function (response)
-                {
+                .then(function (response) {
                     return response || fetch(event.request)
-                        .then(function (response)
-                        {
+                        .then(function (response) {
                             if (event.request.url.includes('.jpg') || event.request.url.includes('.html')) {
                                 cache.put(event.request, response.clone());
                             }
