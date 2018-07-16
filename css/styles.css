@@ -20,7 +20,7 @@ ul, li {
 }
 
 a {
-    color: orange;
+    color: lightblue;
     text-decoration: none;
 }
 
@@ -51,7 +51,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 #footer {
-    background-color: #444;
+    background-color: #252831;
     color: #aaa;
     font-size: 8pt;
     letter-spacing: 1px;
@@ -130,7 +130,7 @@ nav {
 
 .filter-options {
     width: 100%;
-    background-color: #3397DB;
+    background-color: #252831;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -190,7 +190,7 @@ nav {
 }
 
 #restaurants-list div h2 {
-    color: #f18200;
+    color: darkblue;
     font-family: Arial,sans-serif;
     font-size: 14pt;
     font-weight: 200;
@@ -208,7 +208,7 @@ nav {
 }
 
 #restaurants-list div button {
-    background-color: orange;
+    background-color: darkblue;
     border-bottom: 3px solid #eee;
     color: #fff;
     display: inline-block;
@@ -278,9 +278,6 @@ nav {
     padding: 5%, 0, 0, 0;
     width: 100%;
 }
-
-
-
 
 #reviews-container {
     border-bottom: 1px solid #d9d9d9;

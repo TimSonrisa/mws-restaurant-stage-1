@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
+    "",
     "\\css",
-    "\\data",
     "\\img",
     "\\js"
   ],
+  "SelectedNode": "\\sw.js",
   "PreviewInSolutionExplorer": false
 }

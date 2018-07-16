@@ -43,11 +43,11 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
     let requestURL = event.request.url;
     if (requestURL.includes('1337')) {
-        console.log('AJAX data requested');
+        //console.log('AJAX data requested');
         HandleAJAXEvent(event);
     }
     else {
-        console.log('Cache data requested');
+        //console.log('Cache data requested');
         HandleCacheEvent(event);
     }
 });
