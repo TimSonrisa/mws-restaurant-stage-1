@@ -171,7 +171,7 @@ nav {
     text-align: center;
 }
 
-    #restaurants-list div {
+    #restaurants-list li {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -189,7 +189,7 @@ nav {
     width: 100%;
 }
 
-#restaurants-list div h2 {
+#restaurants-list li h2 {
     color: darkblue;
     font-family: Arial,sans-serif;
     font-size: 14pt;
@@ -207,7 +207,7 @@ nav {
     text-align: center;
 }
 
-#restaurants-list div button {
+#restaurants-list li button {
     background-color: darkblue;
     border-bottom: 3px solid #eee;
     color: #fff;
